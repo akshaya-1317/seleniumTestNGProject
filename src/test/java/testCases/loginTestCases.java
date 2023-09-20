@@ -20,10 +20,7 @@ public class loginTestCases extends BaseClass{
 		Thread.sleep(2000);
 		loginPageObjects lpo=new loginPageObjects(driver);
 		lpo.enterUsername().sendKeys(constants.username);
-	/*	driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
-	    hi line nko mhnun line no 20 che settings kele ani hyacha xpath loginPageObject vr dilay.
-	*/
-		lpo.enterPassword().sendKeys(constants.validPassword);
+        lpo.enterPassword().sendKeys(constants.validPassword);
 		lpo.loginButton().click();
 		
 		
