@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseClass {
@@ -49,20 +50,25 @@ public class BaseClass {
 		
 		}
 		
-	
-//		@BeforeMethod
-//		public void urlLaunch() {                      //getting error 
-//			
-//			initializeDriver();
-//			driver.get(prop.getProperty("url"));
+	}
+		@BeforeMethod
+		public void urlLaunch() throws IOException {                      //getting error 
+			
+			initializeDriver();
+			driver.get(prop.getProperty("url"));
+		}
+		
+		
+//		@AfterMethod
+//		public void quitBrowser( ) {
+//		driver.quit();
 //		}
 //		
-//		public void quitBrowser( ) {
-//			driver.quit();
-//		}
-		
 		
 		
 		
 	}
-}
+
+	
+
+

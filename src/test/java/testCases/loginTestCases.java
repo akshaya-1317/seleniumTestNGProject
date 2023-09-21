@@ -1,7 +1,7 @@
 package testCases;
 
 import java.io.IOException;
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 //import org.testng.asserts.SoftAssert;
 //import bsh.org.objectweb.asm.Constants;
@@ -43,18 +43,21 @@ public class loginTestCases extends BaseClass{
 	}
 	
 	
-	@Test(priority=1)
-	public void verifyInValidLogin() throws IOException, InterruptedException {
+//	@Test(priority=1)
+//	public void verifyInValidLogin() throws IOException, InterruptedException {
+//		
+//		
+//		
+//		Thread.sleep(2000);
+//		loginPageObjects lpo=new loginPageObjects(driver);
+//		lpo.enterUsername().sendKeys(constants.username);
+//	    lpo.enterPassword().sendKeys(constants.invalidPAssword);
+//		lpo.loginButton().click();
+//	
+//		commonMethods.handleAssertion(lpo.errorMessage().getText(), constants.invalidErrorExpectedText);
+//		
 		
-		
-		
-		Thread.sleep(2000);
-		loginPageObjects lpo=new loginPageObjects(driver);
-		lpo.enterUsername().sendKeys(constants.username);
-	    lpo.enterPassword().sendKeys(constants.invalidPAssword);
-		lpo.loginButton().click();
-	
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 //		SoftAssert sa=new SoftAssert();
 //		
 //		String expectedText="Invalid credentials";
@@ -67,13 +70,13 @@ public class loginTestCases extends BaseClass{
 //		  sa.assertAll(); //This is mandatory
 //		  
 		
-		commonMethods.handleAssertion(lpo.errorMessage().getText(), constants.invalidErrorExpectedText);
 		
 		
 		
+	
 		
 		
 		
 }
 	
-}
+

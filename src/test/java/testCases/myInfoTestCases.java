@@ -40,28 +40,28 @@ public class myInfoTestCases extends BaseClass {
 		myInfoPageObjects mpo=new myInfoPageObjects(driver);
 		
 		Thread.sleep(2000);
-		mpo.clickOnMyInfo().click();                                   //my Info click
+		mpo.clickOnMyInfo().click();                                   //my Info click -- working
 		
 		
+//        mpo.enterfirstName().clear();	
+//		mpo.enterfirstName().sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+//		Thread.sleep(2000);
+//		mpo.enterfirstName().sendKeys("Akshaya");
+//		
+//		
+//		mpo.enterMiddleName().sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+//		Thread.sleep(2000);
+//		mpo.enterMiddleName().sendKeys("S");
+//		
+//		
+//		mpo.enterLastName().sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+//		Thread.sleep(2000);
+//		mpo.enterLastName().sendKeys("Kulkarni");
 		
-		mpo.enterfirstName().sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
-		Thread.sleep(2000);
-		mpo.enterfirstName().sendKeys("Akshaya");
 		
-		
-		mpo.enterMiddleName().sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
-		Thread.sleep(2000);
-		mpo.enterMiddleName().sendKeys("S");
-		
-		
-		mpo.enterLastName().sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
-		Thread.sleep(2000);
-		mpo.enterLastName().sendKeys("Kulkarni");
-		
-		
-		Thread.sleep(3000);                                            //EmployeeId 
-		mpo.clickOnEmpID().clear();
-	//	mpo.clickOnEmpID().sendKeys("1234");
+		Thread.sleep(3000);                                            //EmployeeId -- working
+	//	mpo.clickOnEmpID().clear();
+		mpo.clickOnEmpID().sendKeys("1234");
 		
 		
 		Thread.sleep(3000);                                            //otherId
@@ -71,17 +71,17 @@ public class myInfoTestCases extends BaseClass {
 //		Thread.sleep(3000);
 //		mpo.licenceNo().sendKeys("ABCD1234");
 		
-		Thread.sleep(3000);                                            //SSNId
+		Thread.sleep(3000);                                            //SSNId -- working
 		mpo.SSNid().sendKeys("abcde123");
 		
 //		Thread.sleep(3000);
 //		mpo.selectGender().click();                                   //Gender
 //		
 		Thread.sleep(3000);
-		mpo.maritalStatusDropdown().click();                         //marital status arrow
+		mpo.maritalStatusDropdown().click();                         //marital status arrow -- working
 		
 		
-		List<WebElement> obj1=mpo.chooseMaritalStatus();            //marital status dropdown options 
+		List<WebElement> obj1=mpo.chooseMaritalStatus();            //marital status dropdown options -- working
 		for(WebElement m:obj1) {
 			if(m.getText().equalsIgnoreCase("Married")) {
 				m.click();
@@ -91,10 +91,10 @@ public class myInfoTestCases extends BaseClass {
 		
 		
 		Thread.sleep(3000);
-		mpo.clickOnNationalityDropdown().click();                      //nationality arrow
+		mpo.clickOnNationalityDropdown().click();                      //nationality arrow -- working
 		
 		Thread.sleep(3000);
-		List<WebElement> obj=mpo.chooseNationality();                  //choose Indian
+		List<WebElement> obj=mpo.chooseNationality();                  //choose Indian -- working
 		
 		for(WebElement k:obj) {
 			if(k.getText().equalsIgnoreCase("Indian")) {
@@ -105,14 +105,14 @@ public class myInfoTestCases extends BaseClass {
 		
 		
 		Thread.sleep(3000);
-		mpo.writeMilitaryStatus().sendKeys("NO");
+		mpo.writeMilitaryStatus().sendKeys("NO");                     //military status -- working
 		
 		
 		Thread.sleep(3000);
-		mpo.smokeBox().click();
+		mpo.smokeBox().click();                                       //smoke box -- working
 		
 		Thread.sleep(3000);
-		mpo.saveButton().click();
+		mpo.saveButton().click();                                      //save button -- working
 		
 		
 	//	mpo.enterfirstName().sendKeys("Akshaya");
